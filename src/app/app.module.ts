@@ -11,6 +11,9 @@ import { LobbyPage } from '../pages/lobby/lobby';
 import { PlayLibsPage } from '../pages/play-libs/play-libs';
 import { MyLibsPage } from '../pages/my-libs/my-libs';
 import { SettingsPage } from '../pages/settings/settings';
+import { SelectStoryPage } from '../pages/select-story/select-story';
+import { WordListPage } from '../pages/word-list/word-list';
+
 
 //import { RestUsers } from '../providers/rest-users';
 
@@ -22,7 +25,9 @@ const injections = [
   LobbyPage,
   PlayLibsPage,
   MyLibsPage,
-  SettingsPage]
+  SettingsPage,
+  SelectStoryPage,
+  WordListPage]
 
 @NgModule({
   declarations: injections,
