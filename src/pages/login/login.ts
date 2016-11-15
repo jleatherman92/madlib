@@ -21,8 +21,8 @@ export class LoginPage {
     console.log('Hello LoginPage Page');
   }
  user = {
-    email: "aaa@aaa.com",
-    password: "aaa"
+    // email: "aaa@aaa.com",
+    // password: "aaa"
   };
   
   //equivilant to $scope.signinForm = function(form) { ... };
@@ -30,6 +30,7 @@ export class LoginPage {
     if(form.invalid) 
       return alert("Please fill in all of the required fields.");
 
+      this.navCtrl.push(LobbyPage);
     // this.SSFUsersRest.login(this.user)
     // .map(res => res.json())
     // .subscribe(res => {

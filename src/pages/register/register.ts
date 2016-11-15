@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 
 import { LobbyPage } from '../lobby/lobby';
 
-import { RestUsers } from '../../providers/rest-users';
+//import { RestUsers } from '../../providers/rest-users';
 
 /*
   Generated class for the Register page.
@@ -29,6 +29,8 @@ export class RegisterPage {
    signupForm(form) {
     if(form.invalid) 
       return alert("Please fill in all of the required fields.");
+      
+      this.navCtrl.push(LobbyPage);
     
     // this.SSFUsersRest.register(this.user)
     // .map(res => res.json())

@@ -8,7 +8,7 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { LobbyPage } from '../pages/lobby/lobby';
 
-import { RestUsers } from '../providers/rest-users';
+//import { RestUsers } from '../providers/rest-users';
 
 const injections = [
   MyApp,
@@ -24,6 +24,8 @@ const injections = [
   ],
   bootstrap: [IonicApp],
   entryComponents: injections,
-  providers: [RestUsers]
+  providers: [
+    //RestUsers
+    ]
 })
 export class AppModule {}
