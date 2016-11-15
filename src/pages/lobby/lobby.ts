@@ -6,6 +6,7 @@ import { LandingPage } from '../landing/landing';
 import { PlayLibsPage } from '../play-libs/play-libs';
 import { MyLibsPage } from '../my-libs/my-libs';
 import { SettingsPage } from '../settings/settings';
+//import { WordListPage } from '../word-list/word-list';
 
 
 //import { RestUsers } from '../../providers/rest-users';

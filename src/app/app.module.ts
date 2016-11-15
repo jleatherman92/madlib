@@ -13,6 +13,7 @@ import { MyLibsPage } from '../pages/my-libs/my-libs';
 import { SettingsPage } from '../pages/settings/settings';
 import { SelectStoryPage } from '../pages/select-story/select-story';
 import { WordListPage } from '../pages/word-list/word-list';
+import { CompletedLibPage } from '../pages/completed-lib/completed-lib';
 
 
 //import { RestUsers } from '../providers/rest-users';
@@ -27,7 +28,8 @@ const injections = [
   MyLibsPage,
   SettingsPage,
   SelectStoryPage,
-  WordListPage]
+  WordListPage,
+  CompletedLibPage]
 
 @NgModule({
   declarations: injections,

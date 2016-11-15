@@ -7,6 +7,7 @@ import { SettingsPage } from '../settings/settings';
 import { SelectStoryPage } from '../select-story/select-story';
 import { WordListPage } from '../word-list/word-list';
 
+
 /*
   Generated class for the PlayLibs page.
 
@@ -32,13 +33,13 @@ export class PlayLibsPage {
     "gameText": "Here is a third random story that never ends...."}
     ]
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) {
+  }
 
   ionViewDidLoad() {
     console.log('Hello PlayLibsPage Page');
   }
   goToWordList(){
-    console.log("Hi wordlist");
     this.navCtrl.push(WordListPage);
   }
 }

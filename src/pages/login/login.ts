@@ -21,8 +21,8 @@ export class LoginPage {
     console.log('Hello LoginPage Page');
   }
  user = {
-    // email: "aaa@aaa.com",
-    // password: "aaa"
+    email: "aaa@aaa.com",
+    password: "aaa"
   };
   
   //equivilant to $scope.signinForm = function(form) { ... };
