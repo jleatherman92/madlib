@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { PlayLibsPage } from '../play-libs/play-libs';
+
 /*
   Generated class for the CompletedLib page.
 
@@ -18,5 +20,9 @@ export class CompletedLibPage {
   ionViewDidLoad() {
     console.log('Hello CompletedLibPage Page');
   }
-
+   saveLib() {
+  }
+  playLib() {
+    this.navCtrl.push(PlayLibsPage);
+  }
 }

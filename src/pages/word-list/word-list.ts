@@ -20,13 +20,13 @@ import { CompletedLibPage } from '../completed-lib/completed-lib';
 export class WordListPage {
   lists: any []= [{
     "listNumber": 1,
-    "listText": "all the random words 1"
+    "listText": "crazy, funny, happy, crawled"
   },
     {"listNumber": 2,
-    "listText": "all the random words 1"},
+    "listText": "sudden, sad, terrifying, skipped"},
     
     {"listNumber": 3,
-    "listText": "all the random words 1"}
+    "listText": "slowly, perplexed, shocked, ran"}
     ]
   
   constructor(public navCtrl: NavController) {

@@ -13,7 +13,7 @@
 <ion-content padding>
 <ion-list>
   <ion-item *ngFor="let list of lists; let $index = index;" (click)="goToViewFinal(list)">
-    Word List {{$index + 1}}
+    Word List {{$index + 1}}: {{list.listText}}
   </ion-item>
 </ion-list>
 
