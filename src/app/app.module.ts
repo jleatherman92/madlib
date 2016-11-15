@@ -8,6 +8,10 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { LobbyPage } from '../pages/lobby/lobby';
 
+import { PlayLibsPage } from '../pages/play-libs/play-libs';
+import { MyLibsPage } from '../pages/my-libs/my-libs';
+import { SettingsPage } from '../pages/settings/settings';
+
 //import { RestUsers } from '../providers/rest-users';
 
 const injections = [
@@ -15,7 +19,10 @@ const injections = [
   LandingPage,
   LoginPage,
   RegisterPage,
-  LobbyPage]
+  LobbyPage,
+  PlayLibsPage,
+  MyLibsPage,
+  SettingsPage]
 
 @NgModule({
   declarations: injections,

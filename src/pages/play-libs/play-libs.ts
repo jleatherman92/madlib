@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { MyLibsPage } from '../my-libs/my-libs';
+import { SettingsPage } from '../settings/settings';
+
 /*
   Generated class for the PlayLibs page.
 

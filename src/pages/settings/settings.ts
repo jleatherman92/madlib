@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { PlayLibsPage } from '../play-libs/play-libs';
+import { MyLibsPage } from '../my-libs/my-libs';
+
+
+
 /*
   Generated class for the Settings page.
 

@@ -3,6 +3,11 @@ import { NavController } from 'ionic-angular';
 
 import { LandingPage } from '../landing/landing';
 
+import { PlayLibsPage } from '../play-libs/play-libs';
+import { MyLibsPage } from '../my-libs/my-libs';
+import { SettingsPage } from '../settings/settings';
+
+
 //import { RestUsers } from '../../providers/rest-users';
 
 /*
@@ -13,9 +18,14 @@ import { LandingPage } from '../landing/landing';
 */
 @Component({
   selector: 'page-lobby',
-  templateUrl: 'lobby.html'
-})
+  templateUrl: 'lobby.html',
+  entryComponents: [PlayLibsPage, MyLibsPage, SettingsPage]
+})  
 export class LobbyPage {
+  
+  tab1Root = PlayLibsPage;
+  tab2Root = MyLibsPage;
+  tab3Root = SettingsPage;
 
   constructor(public navCtrl: NavController
               //public UsersRest: RestUsers
@@ -40,5 +50,6 @@ export class LobbyPage {
     //   this.navCtrl.setRoot(LandingPage);
     // });
   }
-
 }
+
+
