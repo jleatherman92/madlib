@@ -30,7 +30,7 @@ export class LoginPage {
     if(form.invalid) 
       return alert("Please fill in all of the required fields.");
 
-      this.navCtrl.push(LobbyPage);
+      this.navCtrl.setRoot(LobbyPage);
     // this.SSFUsersRest.login(this.user)
     // .map(res => res.json())
     // .subscribe(res => {

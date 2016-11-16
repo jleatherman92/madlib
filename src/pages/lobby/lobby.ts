@@ -37,7 +37,7 @@ export class LobbyPage {
   }
   logoutApp() {
     console.log('Hello LobbyPage Page');
-    this.navCtrl.push(LandingPage);
+    this.navCtrl.setRoot(LandingPage);
     
     // this.UsersRest.logout(window.localStorage.getItem('token'))
     // .map(res => res.json())
