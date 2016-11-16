@@ -4,6 +4,8 @@ import { NavController } from 'ionic-angular';
 import { PlayLibsPage } from '../play-libs/play-libs';
 import { MyLibsPage } from '../my-libs/my-libs';
 
+import { LobbyPage } from '../lobby/lobby';
+
 
 
 /*
@@ -23,5 +25,15 @@ export class SettingsPage {
   ionViewDidLoad() {
     console.log('Hello SettingsPage Page');
   }
+user = {
+};
+  
+   updateForm(form) {
+    if(form.invalid) 
+      return alert("Please fill in all of the required fields.");
 
+      this.navCtrl.push(PlayLibsPage);
+      
+      
+   }
 }
