@@ -20,13 +20,15 @@ import { CompletedLibPage } from '../completed-lib/completed-lib';
 export class WordListPage {
   lists: any []= [{
     "listNumber": 1,
-    "listText": "crazy, funny, happy, crawled"
+    "listText": ["daughter", "hiccups", "running", "hot", "banana", "note", "quick", "school"]
   },
+  
     {"listNumber": 2,
-    "listText": "sudden, sad, terrifying, skipped"},
+    "listText": ["bottle", "stapler", "recite", "horrible", "towel", "head", "firm", "grapefruit"]
+    },
     
     {"listNumber": 3,
-    "listText": "slowly, perplexed, shocked, ran"}
+    "listText": ["part", "flower", "rap", "horrible", "radius", "waste", "mysterious", "business"]}
     ]
   
   constructor(public navCtrl: NavController) {

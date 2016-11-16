@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { PlayLibsPage } from '../play-libs/play-libs';
+import { SelectStoryPage } from '../select-story/select-story';
 
 /*
   Generated class for the CompletedLib page.

@@ -11,8 +11,8 @@
 <ion-content padding>
 
 <ion-list>
-  <ion-item *ngFor="let story of stories; let $index = index;" (click)="goToWordList(story)">
-    Story {{$index + 1}}
+  <ion-item *ngFor="let story of stories;" (click)="goToWordList(story)">
+    {{story.gameName}}
   </ion-item>
 </ion-list>
 
