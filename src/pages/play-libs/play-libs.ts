@@ -22,7 +22,10 @@ export class PlayLibsPage {
   stories: any [] = [{
     "gameNumber": 1,
     "gameName": "Game One",
-    "gameText": "Here is a random story that never ends...."
+    "gameText": `Dear School Nurse,
+    _ will not be attending school today. He/she has come down with a case of _ and has horrible _ and a/an _ fever. We have made an appointment with the _ Dr. _, who studied for many years in _ and has _ degrees in pediatrics. He will send you all the information you need. Thank you!
+Sincerely,
+Mrs. _ `
   },
     {"gameNumber": 2,
     "gameName": "Game Two",
