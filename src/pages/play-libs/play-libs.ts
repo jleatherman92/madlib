@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 import { MyLibsPage } from '../my-libs/my-libs';
 import { SettingsPage } from '../settings/settings';
@@ -22,10 +22,10 @@ export class PlayLibsPage {
   stories: any [] = [{
     "gameNumber": 1,
     "gameName": "Sick Note",
-    "gameText": `Dear School Nurse,
-    My _ will not be attending school today. He/she has come down with a case of _ and has horrible _ and a/an _ fever. We have made an appointment with the _ Dr. _, who studied for many years in _ and has _ degrees in pediatrics. He will send you all the information you need. Thank you!
-Sincerely,
-Mrs. _ `
+    "gameText": `Dear School Nurse:
+My _ will not be attending school today. He/she has come down with a case of _ and can’t stop _ and has a/an _ fever. We have made an appointment with Dr. _, who studied for many years in _ and has _ degrees in pediatrics. He will send you all the information you need. Thank you!
+Sincerely
+Mrs. _`
   },
     {"gameNumber": 2,
     "gameName": "Personal Ad",
@@ -42,13 +42,15 @@ Mrs. _ `
                   7. Put them together, and you have a PB&J _. `}
     ]
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,
+              public Params: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('Hello PlayLibsPage Page');
   }
-  goToWordList(){
-    this.navCtrl.push(WordListPage);
+  goToWordList(story){
+    console.log(story)
+    this.navCtrl.push(WordListPage, {currentStory: story});
   }
 }

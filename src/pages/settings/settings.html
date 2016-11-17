@@ -12,17 +12,6 @@
 <ion-content padding>
     <form #settingsForm="ngForm" (ngSubmit)="updateForm(settingsForm)" novalidate>
     
-    <!--<ion-item>-->
-    <!--  <ion-label>First Name</ion-label>-->
-      <!--[(ngModel)]="user.firstName" sameAs ng-model="user.firstName"-->
-    <!--  <ion-input name="firstName" type="text" placeholder="John" [(ngModel)]="user.firstName" required></ion-input>-->
-    <!--</ion-item>-->
-    
-    <!--<ion-item>-->
-    <!--  <ion-label>Last Name</ion-label>-->
-    <!--  <ion-input name="lastName" type="text" placeholder="Doe" [(ngModel)]="user.lastName" required></ion-input>-->
-    <!--</ion-item>-->
-    
     <ion-item>
       <ion-label>Email</ion-label>
       <ion-input name="email" type="email" placeholder="john@doe.com" [(ngModel)]="user.email" required></ion-input>

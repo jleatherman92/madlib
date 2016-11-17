@@ -10,10 +10,17 @@
 
 
 <ion-content padding> 
-<p>here your final lib will display</p>
+<h2 text-center><b>Your Completed Lib</b></h2>
+
+<p>{{finalStory.currentStory.gameText}}</p>
+
+
+
  <button ion-button class="button-block" (click)="saveLib()"icon-left><ion-icon name="archive"></ion-icon>
    Save My Lib
  </button>
+ 
+
  <button ion-button class="button-block" (click)="playLib()" icon-left><ion-icon name="repeat"></ion-icon>
    Play Again
  </button>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 import { PlayLibsPage } from '../play-libs/play-libs';
 import { SelectStoryPage } from '../select-story/select-story';
@@ -16,10 +16,22 @@ import { SelectStoryPage } from '../select-story/select-story';
 })
 export class CompletedLibPage {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController,
+              public Params: NavParams) {}
+
+finalStory: any = {
+  currentStory: {
+    gameText: ""
+  }
+};
 
   ionViewDidLoad() {
     console.log('Hello CompletedLibPage Page');
+    this.finalStory=this.Params.data.currentStory;
+    console.log(this.finalStory.currentStory.gameText);
+    // var finalList="";
+    // finalList=this.Params.data.list;
+    
   }
    saveLib() {
   }

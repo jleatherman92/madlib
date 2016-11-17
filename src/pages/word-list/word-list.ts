@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 import { MyLibsPage } from '../my-libs/my-libs';
 import { SettingsPage } from '../settings/settings';
@@ -20,7 +20,7 @@ import { CompletedLibPage } from '../completed-lib/completed-lib';
 export class WordListPage {
   lists: any []= [{
     "listNumber": 1,
-    "listText": ["daughter", "hiccups", "running", "hot", "banana", "note", "quick", "school"]
+    "listText": ["daughter", "hiccups", "running", "hot", "banana", "note", "profound", "school"]
   },
   
     {"listNumber": 2,
@@ -28,17 +28,22 @@ export class WordListPage {
     },
     
     {"listNumber": 3,
-    "listText": ["part", "flower", "rap", "horrible", "radius", "waste", "mysterious", "business"]}
+    "listText": ["part", "flower", "rap", "length", "radius", "waste", "mysterious", "fish"]}
     ]
   
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,
+              public Params: NavParams) {
 
   }
+
+story: any;
 
   ionViewDidLoad() {
     console.log('Hello WordListPage Page');
+    this.story = this.Params.data;
   }
-  goToViewFinal(){
-  this.navCtrl.push(CompletedLibPage);
+  goToViewFinal(list, story){
+    console.log(list);
+  this.navCtrl.push(CompletedLibPage, {currentList: list, currentStory: this.story});
   }
 }
