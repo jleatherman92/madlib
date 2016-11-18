@@ -30,13 +30,18 @@ export class CompletedLibPage {
 // };
 
 
+
+
   ionViewDidLoad() {
-    console.log('Hello CompletedLibPage Page');
-    console.log(this.finalStory.currentStory.gameText);
-    console.log(this.Params.data);
-    console.log(this.finalText.listText);
+    // console.log('Hello CompletedLibPage Page');
+    // console.log(this.finalStory.currentStory.gameText);
+    // console.log(this.Params.data);
+    // console.log(this.finalText.listText);
   }
-  
+  // splitLib(){
+  //   console.log("does it work?");
+  // }
+  // this.splitLib()
   finalStory=this.Params.data.currentStory;
   finalText=this.Params.data.currentList;
   

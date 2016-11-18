@@ -35,6 +35,8 @@ export class WordListPage {
               public Params: NavParams) {
 
   }
+  
+
 
 story: any;
 
@@ -43,6 +45,8 @@ story: any;
     this.story = this.Params.data;
   }
   goToViewFinal(list, story){
+  let strArr = story.currentStory.gameText.split("_");
+  console.log(strArr);
     console.log(list);
   this.navCtrl.push(CompletedLibPage, {currentList: list, currentStory: this.story});
   }
