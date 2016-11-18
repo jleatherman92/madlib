@@ -12,7 +12,9 @@
 <ion-content padding> 
 <h2 text-center><b>Your Completed Lib</b></h2>
 
-<p>{{finalStory.currentStory.gameText}}</p>
+<p [innerHtml]="finalStory.currentStory.gameText">  </p>
+
+<p>{{finalText.listText}}</p>
 
 
 

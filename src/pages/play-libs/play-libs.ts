@@ -22,9 +22,9 @@ export class PlayLibsPage {
   stories: any [] = [{
     "gameNumber": 1,
     "gameName": "Sick Note",
-    "gameText": `Dear School Nurse:
-My _ will not be attending school today. He/she has come down with a case of _ and can’t stop _ and has a/an _ fever. We have made an appointment with Dr. _, who studied for many years in _ and has _ degrees in pediatrics. He will send you all the information you need. Thank you!
-Sincerely
+    "gameText": `Dear School Nurse:<br>
+My _ will not be attending school today. He/she has come down with a case of _ and can’t stop _ and has a/an _ fever. We have made an appointment with Dr. _, who studied for many years in _ and has _ degrees in pediatrics. He will send you all the information you need. Thank you! <br>
+Sincerely<br>
 Mrs. _`
   },
     {"gameNumber": 2,
@@ -33,12 +33,12 @@ Mrs. _`
     
     {"gameNumber": 3,
     "gameName": "How to Make PB+J",
-    "gameText": `1. Select the type of _ you want to use. Many prefer the taste of white _, while others prefer wheat bread because it is healthy. 
-                  2. _ the flavor of Jam/Jelly. I personally prefer strawberry jam, but you can use whatever you want. 
-                  3. Choose the type of peanut butter - either _ or creamy. 
-                  4. Take out 1.105 slice(s) of _. 
-                  5. Use a _ to spread the jam all over on of the pieces of bread. 
-                  6. Now put the peanut butter on the _ piece of bread. 
+    "gameText": `1. Select the type of _ you want to use. Many prefer the taste of white _, while others prefer wheat bread because it is healthy. <br>
+                  2. _ the flavor of Jam/Jelly. I personally prefer strawberry jam, but you can use whatever you want. <br>
+                  3. Choose the type of peanut butter - either _ or creamy. <br>
+                  4. Take out 1.105 slice(s) of _. <br>
+                  5. Use a _ to spread the jam all over on of the pieces of bread. <br>
+                  6. Now put the peanut butter on the _ piece of bread. <br>
                   7. Put them together, and you have a PB&J _. `}
     ]
 

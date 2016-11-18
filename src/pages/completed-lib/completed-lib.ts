@@ -19,22 +19,32 @@ export class CompletedLibPage {
   constructor(public navCtrl: NavController,
               public Params: NavParams) {}
 
-finalStory: any = {
-  currentStory: {
-    gameText: ""
-  }
-};
+// finalStory: any = {
+//   currentStory: {
+//     gameText: ""
+//   }
+// };
+
+// finalText: any = {
+//   listText: ""
+// };
+
 
   ionViewDidLoad() {
     console.log('Hello CompletedLibPage Page');
-    this.finalStory=this.Params.data.currentStory;
     console.log(this.finalStory.currentStory.gameText);
-    // var finalList="";
-    // finalList=this.Params.data.list;
-    
+    console.log(this.Params.data);
+    console.log(this.finalText.listText);
   }
+  
+  finalStory=this.Params.data.currentStory;
+  finalText=this.Params.data.currentList;
+  
+
    saveLib() {
+  
   }
+  
   playLib() {
     this.navCtrl.push(PlayLibsPage);
   }
